@@ -1,0 +1,14 @@
+version: 2
+
+sources: 
+  - name: raw_data
+    database : finance_db
+    schema : raw
+    tables : 
+        - name: products
+        - name: orders
+        - name: order_items
+        - name: customers
+
+# this can help us work in a functional way that any change happen we will only change it hear 
+# this also will help us in building data linage
